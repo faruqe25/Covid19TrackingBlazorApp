@@ -1,0 +1,60 @@
+﻿@inherits LayoutComponentBase
+<style>
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    /* Style the header */
+    .header {
+        background-color: #f1f1f1;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        height:50px;
+        
+        color:green;
+    }
+
+        /* Style the topnav links */
+        /*.topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }*/
+
+            /* Change color on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            #test{
+                padding-top:13px;
+            }
+
+
+</style>
+    <div class="main">
+            <div class="header">
+                <h1>Covid'19 Info</h1>
+            </div>
+            <div class="topnav">
+                <marquee id="test" direction="right">Wash your hands frequently. Stay home,Please!</marquee>
+            </div>
+            <div class="content px-4">
+                @Body
+            </div>
+    </div>
